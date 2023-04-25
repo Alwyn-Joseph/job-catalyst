@@ -1,0 +1,15 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }

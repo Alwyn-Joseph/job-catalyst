@@ -1,0 +1,65 @@
+
+<div class="container-fluid">
+    <div class="homePage">
+
+    </div>
+<br>
+<br>
+    <br>
+    <div class="container" *ngFor="let jobs of jobsList">
+        <div class="card">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="true" href="#"><span class="text-muted">Ends on </span>
+                            {{jobs.deadLine}}</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">{{jobs.title}} ({{jobs.LPA}} LPA)</h4>
+                <h6 class="card-title">{{jobs.company}}</h6>
+                <br>
+                <p class="card-text">{{jobs.requirment.desc}}</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Education</th>
+                                <td>{{jobs.requirment.education}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Passed Out Year</th>
+                                <td>{{jobs.requirment.passoutYear}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Experience</th>
+                                <td>{{jobs.requirment.experience}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mandatory Skills</th>
+                                <td>{{jobs.requirment.skillsM}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Recommended Skills</th>
+                                <td>{{jobs.requirment.skillsO}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            
+                            <a href="#" style="font-size: larger;font-weight: 600;" class="button-34">Apply
+                                Now</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>
